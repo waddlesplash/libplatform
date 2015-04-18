@@ -1,0 +1,12 @@
+/*
+ * (C) 2015 Augustin Cavalier <waddlesplash>
+ * All rights reserved. Distributed under the terms of the MIT license.
+ */
+#ifndef CONFIG_H
+#define CONFIG_H
+
+/****** Headers ******/
+#cmakedefine HAVE_STDBOOL_H 1
+#cmakedefine HAVE_STDINT_H 1
+
+#endif // CONFIG_H
