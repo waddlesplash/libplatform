@@ -4,14 +4,15 @@
 include(CheckIncludeFiles)
 include(CheckCSourceCompiles)
 
+set(i ../include/platform)
 set(LIBPLATFORM_SRCS
-   clock.h
-   events.h
-   types.h
-   gl.h
-   glwindow.h
-   ascii.h
-   geometry.h
+   ${i}/clock.h
+   ${i}/events.h
+   ${i}/types.h
+   ${i}/gl.h
+   ${i}/glwindow.h
+   ${i}/ascii.h
+   ${i}/geometry.h
    )
 
 check_include_files(stdbool.h HAVE_STDBOOL_H)
@@ -48,7 +49,7 @@ else()
   set(LIBPLATFORM_SRCS ${LIBPLATFORM_SRCS} posix/clock.c posix/sleep.c)
 endif()
 
-include_directories(${LIBPLATFORM_INCLUDE})
+include_directories(${CMAKE_CURRENT_BINARY_DIR} ${LIBPLATFORM_INCLUDE} ../include)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h)
 add_library(platform STATIC ${LIBPLATFORM_SRCS})
 target_link_libraries(platform ${LIBPLATFORM_LIBS})
