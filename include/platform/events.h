@@ -2,8 +2,8 @@
  * (C) 2015 Augustin Cavalier <waddlesplash>
  * All rights reserved. Distributed under the terms of the MIT license.
  */
-#ifndef UTIL_EVENTS_H
-#define UTIL_EVENTS_H
+#ifndef PLATFORM_EVENTS_H
+#define PLATFORM_EVENTS_H
 
 #define EVENT_NONE		0x00
 #define EVENT_QUIT		0x01
@@ -14,4 +14,4 @@
 
 #include "ascii.h"
 
-#endif // UTIL_EVENTS_H
+#endif // PLATFORM_EVENTS_H

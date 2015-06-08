@@ -2,8 +2,8 @@
  * (C) 2015 Augustin Cavalier <waddlesplash>
  * All rights reserved. Distributed under the terms of the MIT license.
  */
-#ifndef UTIL_ASCII_H
-#define UTIL_ASCII_H
+#ifndef PLATFORM_ASCII_H
+#define PLATFORM_ASCII_H
 
 #define ASCII_TAB		0x09
 #define ASCII_LF		0x0a
@@ -96,4 +96,4 @@
 #define ASCII_y 0x79
 #define ASCII_z 0x7a
 
-#endif // UTIL_ASCII_H
+#endif // PLATFORM_ASCII_H
